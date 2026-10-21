@@ -1,0 +1,34 @@
+:root {
+  --accent: #d2691e;
+  --accent-light: #ffc97f;
+  --ink: #5c3a21;
+  --paper: #fffaf0;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #f3ece0;
+  color: var(--ink);
+  font-family: "Roboto", "Segoe UI", Arial, sans-serif;
+}
+header { background: var(--accent); padding: 1rem 1.5rem; max-width: 900px; margin: 0 auto; }
+header h1 { margin: 0; font-size: 1.8rem; }
+main { background: var(--paper); max-width: 900px; margin: 0 auto; padding: 1rem 1.5rem 2rem; }
+footer { max-width: 900px; margin: 0 auto; padding: 0.5rem 1.5rem; font-size: 0.8rem; background: var(--paper); }
+h2 { font-size: 1.5rem; }
+p { line-height: 1.5; }
+
+#filters_screen { display: flex; gap: 0.6rem; margin: 0.5rem 0; }
+.filter {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.4rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.filter:hover { filter: brightness(1.1); }
+.filter:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+.filter.active { background: var(--accent-light); }

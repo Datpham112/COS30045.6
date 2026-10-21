@@ -1,0 +1,6 @@
+.responsive-svg-container { width: 100%; max-width: 800px; margin-bottom: 1rem; }
+.responsive-svg-container svg { width: 100%; height: auto; display: block; }
+svg text { fill: var(--ink); font-family: inherit; }
+.axis-label { font-size: 12px; }
+.tooltip text { fill: #fff; font-weight: 700; font-size: 11px; }
+circle { transition: opacity 0.3s; }
